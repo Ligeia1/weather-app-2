@@ -10,10 +10,50 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/3d9453b0ef.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather Search</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <form class="d-flex" id="search-city-form">
+        <input
+          class="form-control me-2 searchbar"
+          type="search"
+          placeholder="Search city"
+          autofocus="on"
+        />
+        <button class="btn btn-outline-success searchbutton" type="submit">
+          🔍
+        </button>
+        <button type="button" class="btn btn-primary">📍 My location</button>
+      </form>
+      <br />
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li id="current-city">city</li>
+            <li id="weather-description">sunny</li>
+            <li id="current-date">Monday, October 18</li>
+            <li id="time">18:05</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li id="current-temperature">14°C</li>
+            <li id="temp-min">10°C / <span id="temp-max">15°C</span></li>
+            <li id="wind">2 km/h</li>
+            <li id="precipitation">0 %</li>
+          </ul>
+        </div>
+        <div class="col">
+          <br />
+          <i class="fas fa-sun"></i>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
