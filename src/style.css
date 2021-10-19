@@ -1,6 +1,7 @@
 body {
   font-family: "Merriweather", serif;
-  background-image: url("sky.jpg");
+  background-color: rgb(203, 239, 250);
+  background-image: url("sky2.jpg");
 }
 
 .weather-app {
@@ -35,11 +36,11 @@ small {
 }
 
 #search-button {
-  background-color: rgb(140, 140, 248);
+  background-color: rgb(131, 197, 241);
   position: relative;
   left: -56px;
 }
 
 #location-button {
-  background-color: rgb(140, 140, 248);
+  background-color: rgb(131, 197, 241);
 }
