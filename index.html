@@ -21,58 +21,62 @@
       crossorigin="anonymous"
     ></script>
     <title>Weather Search</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="visuals/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="d-flex" id="search-city-form">
-          <input
-            id="searchbar"
-            class="form-control me-2 searchbar"
-            type="search"
-            placeholder="Search city"
-            autofocus="on"
-          />
-          <button
-            id="search-button"
-            class="btn btn-primary searchbutton"
-            type="submit"
-          >
-            🔍
-          </button>
-          <button id="location-button" type="button" class="btn btn-primary">
-            📍 My location
-          </button>
-        </form>
-        <br />
-        <h1 id="current-city">city</h1>
-        <div class="row">
-          <div class="col">
-            <ul>
-              <li id="weather-description">sunny</li>
-              <li id="current-date">Monday, October 18</li>
-              <li id="time">18:05</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li id="current-temperature">14°C</li>
-              <li id="temp-min">10°C / <span id="temp-max">15°C</span></li>
-              <li id="wind">2 km/h</li>
-              <li id="precipitation">0 %</li>
-            </ul>
-          </div>
-          <div class="col">
-            <br />
-            <i id="weather-icon" class="fas fa-sun"></i>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="d-flex" id="search-city-form">
+            <input
+              id="searchbar"
+              class="form-control me-2 searchbar"
+              type="search"
+              placeholder="Search city"
+              autofocus="on"
+            />
+            <button
+              id="search-button"
+              class="btn btn-primary searchbutton"
+              type="submit"
+            >
+              🔍
+            </button>
+            <button id="location-button" type="button" class="btn btn-primary">
+              📍 My location
+            </button>
+          </form>
+          <br />
+          <h1 id="current-city">city</h1>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li id="weather-description">sunny</li>
+                <li id="current-date">Monday, October 18</li>
+                <li id="time">18:05</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li id="current-temperature">14°C</li>
+                <li id="temp-min">10°C / <span id="temp-max">15°C</span></li>
+                <li id="wind">2 km/h</li>
+                <li id="precipitation">0 %</li>
+              </ul>
+            </div>
+            <div class="col">
+              <br />
+              <i id="weather-icon" class="fas fa-sun"></i>
+            </div>
           </div>
         </div>
+        <small>
+          <a href="https://github.com/Ligeia1/weather-app-2"
+            >open-source code</a
+          >
+          by Olga Mang</small
+        >
       </div>
-      <small>
-        <a href="https://github.com/Ligeia1/weather-app-2">open-source code</a>
-        by Olga Mang</small
-      >
     </div>
   </body>
 </html>

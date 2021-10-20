@@ -1,0 +1,70 @@
+body {
+  font-family: "Merriweather", serif;
+  background-image: url(sky2.jpg);
+  background-color: rgb(203, 239, 250);
+  background-size: auto;
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: 10px;
+  color: rgb(13, 13, 90);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 18px;
+  color: rgb(13, 13, 90);
+}
+
+small {
+  text-align: center;
+}
+
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.weather-app {
+  border: 1px solid rgba(153, 149, 149, 0.5);
+  border-radius: 8px;
+  padding: 30px;
+  background-color: rgba(240, 255, 255, 0.3);
+}
+
+#searchbar {
+  width: auto;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+#search-button {
+  background-color: rgb(158, 209, 243);
+  position: relative;
+  left: -56px;
+  transition: 150ms ease-in-out;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+#search-button:hover {
+  background-color: #2e94b9;
+}
+
+#location-button {
+  background-color: rgb(158, 209, 243);
+  color: #144a5e;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+#location-button:hover {
+  background-color: #2e94b9;
+  color: rgb(212, 232, 245);
+}
+
+#weather-icon {
+  font-size: 60px;
+}
