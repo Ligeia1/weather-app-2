@@ -80,3 +80,7 @@ small {
 #current-temperature {
   font-size: 40px;
 }
+
+#weather-description {
+  text-transform: capitalize;
+}
