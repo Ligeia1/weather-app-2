@@ -73,14 +73,14 @@ small {
   font-size: 40px;
 }
 
-#weather-icon {
-  font-size: 60px;
-}
-
 #current-temperature {
   font-size: 40px;
 }
 
 #weather-description::first-letter {
   text-transform: capitalize;
+}
+
+#icon {
+  font-size: 60px;
 }
