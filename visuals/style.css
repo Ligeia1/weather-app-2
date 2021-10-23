@@ -81,6 +81,6 @@ small {
   font-size: 40px;
 }
 
-#weather-description {
+#weather-description::first-letter {
   text-transform: capitalize;
 }
