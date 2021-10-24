@@ -56,7 +56,7 @@ function showTemperature(response) {
   weatherDescription.innerHTML = response.data.weather[0].description;
   tempMin.innerHTML = Math.round(response.data.main.temp_min);
   tempMax.innerHTML = Math.round(response.data.main.temp_max);
-  wind.innerHTML = Math.round(response.data.wind.speed) * 3.6;
+  wind.innerHTML = Math.round(response.data.wind.speed * 3.6);
   humidity.innerHTML = response.data.main.humidity;
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
   icon.setAttribute(

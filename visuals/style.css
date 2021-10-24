@@ -16,6 +16,10 @@ li {
   color: rgb(13, 13, 90);
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 small {
   text-align: center;
 }
@@ -87,10 +91,6 @@ small {
 
 #current-temperature {
   font-size: 40px;
-}
-
-#weather-description::first-letter {
-  text-transform: capitalize;
 }
 
 #icon {
