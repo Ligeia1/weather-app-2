@@ -40,7 +40,6 @@ function formatDate(timestamp) {
 }
 
 function showTemperature(response) {
-  console.log(response.data);
   let currentCity = document.querySelector("#current-city");
   let currentTemperature = document.querySelector("#current-temperature");
   let weatherDescription = document.querySelector("#weather-description");
@@ -79,7 +78,24 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Hannover");
+function showCurrentPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "8c48afa47a9a9c24f3500c7039d50aaa";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function getPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showCurrentPosition);
+}
+
+let currentPosition = document.querySelector("#location-button");
+currentPosition.addEventListener("click", getPosition);
 
 let form = document.querySelector("#search-city-form");
 form.addEventListener("submit", handleSubmit);
+
+search("Hannover");
