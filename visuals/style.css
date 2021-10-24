@@ -37,7 +37,7 @@ small {
 }
 
 .units {
-  font-size: 14px;
+  font-size: 17px;
   position: relative;
   top: -17px;
 }
@@ -86,13 +86,9 @@ small {
 }
 
 #current-city {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 #current-temperature {
-  font-size: 40px;
-}
-
-#icon {
-  font-size: 60px;
+  font-size: 45px;
 }
