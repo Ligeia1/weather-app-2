@@ -44,6 +44,18 @@ small {
   margin-bottom: 20px;
 }
 
+#fahrenheit-link {
+  text-decoration: none;
+  color: rgb(13, 13, 90);
+  font-weight: 500;
+}
+
+#celsius-link {
+  text-decoration: none;
+  color: rgb(13, 13, 90);
+  font-weight: 500;
+}
+
 #search-button {
   background-color: rgb(158, 209, 243);
   position: relative;

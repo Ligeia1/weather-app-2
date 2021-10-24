@@ -50,6 +50,7 @@ function showTemperature(response) {
   let currentDate = document.querySelector("#current-date");
   let icon = document.querySelector("#icon");
 
+  tempCelsius = response.data.main.temp;
   currentTemperature.innerHTML = Math.round(response.data.main.temp);
   currentCity.innerHTML = response.data.name;
   weatherDescription.innerHTML = response.data.weather[0].description;
@@ -92,10 +93,31 @@ function getPosition(event) {
   navigator.geolocation.getCurrentPosition(showCurrentPosition);
 }
 
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let tempFahrenheit = (tempCelsius * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(tempFahrenheit);
+}
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(tempCelsius);
+}
+
+let tempCelsius = null;
+
 let currentPosition = document.querySelector("#location-button");
 currentPosition.addEventListener("click", getPosition);
 
 let form = document.querySelector("#search-city-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Hannover");
