@@ -13,7 +13,7 @@ ul {
 li {
   list-style: none;
   font-size: 18px;
-  color: rgb(13, 13, 90);
+  color: rgba(13, 13, 90, 0.8);
 }
 
 li::first-letter {
@@ -46,6 +46,9 @@ small {
   font-size: 15px;
   color: rgba(21, 6, 75, 0.7);
   text-align: center;
+  background-color: rgba(89, 74, 143, 0.1);
+  border-radius: 8px;
+  padding: 24px;
 }
 
 .forecast-temperature-max {
@@ -62,6 +65,7 @@ small {
   width: auto;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 #fahrenheit-link {
@@ -83,6 +87,7 @@ small {
   transition: 150ms ease-in-out;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 #search-button:hover {
@@ -94,6 +99,7 @@ small {
   color: #144a5e;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 #location-button:hover {
@@ -103,8 +109,10 @@ small {
 
 #current-city {
   font-size: 45px;
+  color: rgb(13, 13, 90);
 }
 
 #current-temperature {
   font-size: 45px;
+  color: rgb(13, 13, 90);
 }
