@@ -42,6 +42,22 @@ small {
   top: -17px;
 }
 
+.forecast {
+  font-size: 15px;
+  color: rgba(21, 6, 75, 0.7);
+  text-align: center;
+}
+
+.forecast-temperature-max {
+  font-size: 14px;
+  color: rgba(21, 6, 75, 0.9);
+}
+
+.forecast-temperature-min {
+  font-size: 14px;
+  color: rgba(21, 6, 75, 0.5);
+}
+
 #city-input {
   width: auto;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);

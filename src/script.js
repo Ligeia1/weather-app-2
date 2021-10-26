@@ -39,6 +39,33 @@ function formatDate(timestamp) {
   return `${day}, ${month} ${dateNumber}`;
 }
 
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col">
+                <div class="forecast-date">${day}</div>
+                <img
+                  src="http://openweathermap.org/img/wn/04d@2x.png"
+                  alt="weather icon"
+                  width="40"
+                />
+                <div class="forecast-temperatures">
+                  <span class="forecast-temperature-max">11°</span>
+                  <span class="forecast-temperature-min">5°</span>
+                </div>
+              </div>
+          `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let currentCity = document.querySelector("#current-city");
   let currentTemperature = document.querySelector("#current-temperature");
@@ -121,3 +148,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Hannover");
+showForecast();
